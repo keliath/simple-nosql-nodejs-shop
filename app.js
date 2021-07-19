@@ -18,7 +18,7 @@ app.use((req, res, next) => {
     // const user = new User('carlos', 'test@test.com');
     // user.save();
 
-    User.findById('60f4be50713161189c60f077').then(user => {
+    User.findById('60f513e69306b4246e0d0a32').then(user => {
         // req.user = user; para almacenar solo las propiedades de la base de datos
         req.user = new User(user.username, user.email, user.cart, user._id); // crear un nuevo objeto para poder usar sus metodos
         // console.log(req.user);
